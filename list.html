@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIHF Database</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body onbeforeunload="loginAgain()">
+    
+    <div>
+        <h1>Players</h1>
+        <table id="table">
+            <tr class="header">
+                <th style="flex: 3;">Name</th>
+                <th style="flex: 3;">Team</th>
+                <th>Age</th>
+                <th>HT(cm)</th>
+                <th>WT(kg)</th>
+                <th>P</th>
+                <th>S / C</th>
+                <th>GP</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>PIM</th>
+                <th>GAA</th>
+                <th>SVS</th>
+                <th>SV%</th>
+            </tr>
+            <tr id="parent">
+                <td class="grey"><a href="gustav.html" class="btn-name">Gustav Forsling</a></td>
+                <td class="team">Florida Panthers</td>
+                <td class="grey" class="age">27</td>
+                <td class="height">182</td>
+                <td class="weight">84</td>
+                <td class="grey" class="pos">D</td>
+                <td class="grey" class="shoot">Left</td>
+                <td class="gp">18</td>
+                <td class="g" class="grey">2</td>
+                <td class="a" class="grey">3</td>
+                <td class="pim">10</td>
+                <td class="gaa">0</td>
+                <td class="grey" class="svs">0</td>
+                <td class="grey" class="svp">0</td>
+            </tr>
+            <tr id="parent">
+                <td class="grey"><a href="philip.html" class="btn-name">Philip Grubauer</a></td>
+                <td class="team">Seattle Kraken</td>
+                <td class="grey" class="age">32</td>
+                <td class="height">185</td>
+                <td class="weight">85</td>
+                <td class="grey" class="pos">G</td>
+                <td class="grey" class="shoot">Left</td>
+                <td class="gp">30</td>
+                <td class="g" class="grey">0</td>
+                <td class="a" class="grey">0</td>
+                <td class="pim">2</td>
+                <td class="gaa">3.08</td>
+                <td class="grey" class="svs">82</td>
+                <td class="grey" class="svp">.877</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
