@@ -4,7 +4,7 @@ function auth() {
 
     //condition
 
-    if(user == "admin" && password == "&#3567@MIHF") {
+    if(user == "admin" && password == "1223334444") {
         window.location.assign('list.html')
         alert("Nice")
     }
