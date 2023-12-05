@@ -426,7 +426,7 @@ var players = [
         'id': 'Azlly',
         'image': 'ppic/azlly.jpg',
         'name': 'Tengku Muhammad Azlly Bin Tengku Abdillah', 
-        'team': 'Resaper',
+        'team': 'Reapers',
         'nt': 'Mens',
         'age': '43',
         'height': '177',
