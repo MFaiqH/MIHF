@@ -551,23 +551,3 @@ function buildTable(data) {
 
 buildTable(players)
 
-$('th').on('click', function(){
-    var column = $(this).data('column')
-    var order = $(this).data('order')
-    var text = $(this).html()
-    text = text.substring(0, text.length - 1)
-
-    if(order == 'desc'){
-        $(this).data('order', "asc")
-        players = players.sort((a,b) => a[column] > b[column] ? 1 : -1)
-        text += '&#9660'
-
-    }else{
-        $(this).data('order', "desc")
-        players = players.sort((a,b) => a[column] < b[column] ? 1 : -1)
-        text += '&#9650'
-
-    }
-    $(this).html(text)
-    buildTable(players)
-})
