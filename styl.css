@@ -19,12 +19,6 @@ h1{
 th, td{
     padding: 17px;
 }
-th{
-    cursor: pointer;
-}
-td{
-    cursor: pointer;
-}
 #table{
     border-collapse: collapse;
     border-spacing: 1em;
