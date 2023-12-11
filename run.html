@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAO RUN</title>
+  <link rel="stylesheet" href="players.css">
+</head>
+<body>
+  <section class="profile">
+    <div class="container">
+      <div class="img">
+        <img src="ppic/hao_run.jpeg" alt="">
+      </div>
+      <div class="txt">
+        <h1>Hao Run</h1>
+        <div class="slider-wrapper">
+          <div class="slide active">
+            <h2>Lim Hao Run</h2>
+            <div class="bottom">
+              <div class="info-a">
+                <h6>DOB</h6>
+                <p>4 October 2002</p>
+              </div>
+              <div class="info-b">
+                <h6>Age</h6>
+                <p>22</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide ">
+            <div class="top">
+              <div class="info-a">
+                <h6>HT(cm)</h6>
+                <p>185</p>
+              </div>
+              <div class="info-b">
+                <h6>WT(kg)</h6>
+                <p>95</p>
+              </div>
+            </div>
+            <h6>Shoot</h6>
+            <p>Right</p>
+            </div>
+          </div>
+          <div class="slide ">
+            <h6>Position</h6>
+            <p>Defense</p>
+            <h6>Team</h6>
+            <p>Panthers(PHL)</p>
+            </div>
+          </div>
+          <div class="slide " id="nt">
+            <h2>National Team</h2>
+            <p>U15 2017</p>
+            <p>U20 2019,2022</p>
+            <p>Mens 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <div class="slider-btn active"></div>
+          <div class="slider-btn "></div>
+          <div class="slider-btn "></div>
+          <div class="slider-btn "></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stats">
+    <table>
+      <tr>
+        <th>GP</th>
+        <th>G</th>
+        <th>A</th>
+        <th>PIM</th>
+        <th>League</th>
+      </tr>
+      <tbody class="t-body">
+        <tr>
+          <td>3</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>CCOA U20 2019</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>0</td>
+          <td>0</td>
+          <td>6</td>
+          <td>SEA Games 2019</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>2</td>
+          <td>0</td>
+          <td>4</td>
+          <td>AOC U20 2022</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>BUIHA 21/22</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>BUIHA 22/23</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>2</td>
+          <td>Cobra 23/24(Season)</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+          <td>PHL 2023</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+<script>
+  var slides = document.querySelectorAll('.slide ')
+  var buttons = document.querySelectorAll('.slider-btn ')
+  let CurrentSlide = 1
+
+  var manualNav = function(manual) {
+    slides.forEach(function(slide) {
+        slide.classList.remove("active");
+
+        buttons.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+    });
+
+    slides[manual].classList.add('active');
+    buttons[manual].classList.add('active');
+  };
+
+  buttons.forEach(function(btn, i) {
+    btn.addEventListener('click', function() {
+      manualNav(i);
+      CurrentSlide = i;
+    });
+  });
+</script>
+</html>

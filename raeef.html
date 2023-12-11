@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAEEF</title>
+  <link rel="stylesheet" href="players.css">
+</head>
+<body>
+  <section class="profile">
+    <div class="container">
+      <div class="img">
+        <img src="ppic/raeef.jpeg" alt="">
+      </div>
+      <div class="txt">
+        <h1>Raeef</h1>
+        <div class="slider-wrapper">
+          <div class="slide active">
+            <h2>Raeef Majid bin Raphael Sadikin</h2>
+            <div class="bottom">
+              <div class="info-a">
+                <h6>DOB</h6>
+                <p>20 September 2008</p>
+              </div>
+              <div class="info-b">
+                <h6>Age</h6>
+                <p>16</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide ">
+            <div class="top">
+              <div class="info-a">
+                <h6>HT(cm)</h6>
+                <p>171</p>
+              </div>
+              <div class="info-b">
+                <h6>WT(kg)</h6>
+                <p>65</p>
+              </div>
+            </div>
+            <h6>Catch</h6>
+            <p>Left</p>
+            </div>
+          </div>
+          <div class="slide ">
+            <h6>Position</h6>
+            <p>Goalie</p>
+            <h6>Team</h6>
+            <p>Grizzlies(MHL)</p>
+            </div>
+          </div>
+          <div class="slide " id="nt">
+            <h2>National Team</h2>
+            <p>U15 2023</p>
+            <p>U18 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <div class="slider-btn active"></div>
+          <div class="slider-btn "></div>
+          <div class="slider-btn "></div>
+          <div class="slider-btn "></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stats">
+    <table>
+      <tr>
+        <th>GP</th>
+        <th>G</th>
+        <th>A</th>
+        <th>PIM</th>
+        <th>GAA</th>
+        <th>SVS</th>
+        <th>SV%</th>
+        <th>League</th>
+      </tr>
+      <tbody class="t-body">
+        <tr>
+          <td>5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>?</td>
+          <td>144</td>
+          <td>0.683</td>
+          <td>U15 Invitational 2023</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>3.8</td>
+          <td>277</td>
+          <td>0.794</td>
+          <td>MHL 2023</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+<script>
+  var slides = document.querySelectorAll('.slide ')
+  var buttons = document.querySelectorAll('.slider-btn ')
+  let CurrentSlide = 1
+
+  var manualNav = function(manual) {
+    slides.forEach(function(slide) {
+        slide.classList.remove("active");
+
+        buttons.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+    });
+
+    slides[manual].classList.add('active');
+    buttons[manual].classList.add('active');
+  };
+
+  buttons.forEach(function(btn, i) {
+    btn.addEventListener('click', function() {
+      manualNav(i);
+      CurrentSlide = i;
+    });
+  });
+</script>
+</html>
