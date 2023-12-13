@@ -517,6 +517,25 @@ var players = [
         "svs": "0",
         "svp": "0"
     },
+    {
+        "id": "Aisar",
+        "image": "ppic/aisar.jpeg",
+        "name": "Muhd Amin Aisar Bin Muhd Fadzli Amin", 
+        "team": "Outlaws",
+        "nt": "U15,U18,U20,Mens",
+        "age": "18",
+        "height": "171",
+        "weight": "64",
+        "position": "C",
+        "snc": "Right",
+        "gp": "66",
+        "goals": "81",
+        "assists": "77",
+        "pim": "24",
+        "gaa": "0",
+        "svs": "0",
+        "svp": "0"
+    },
 ]
 
 var windows = [
@@ -524,7 +543,7 @@ var windows = [
     'irs.html','ash.html','hai.html','izra.html','run.html','mirul.html',
     'alif.html','rith.html','fiq.html','qish.html','nate.html','gene.html',
     'grald.html','jay.html','arif.html','azlly.html','syed.html','jun.html',
-    'karim.html','sam.html'
+    'karim.html','sam.html','aisar.html'
 ]
 
 function buildTable(data) {
